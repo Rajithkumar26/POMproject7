@@ -33,7 +33,6 @@ public class HomePageClass extends ParentClass {
 		super();
 		PageFactory.initElements(driver, this);
 	}
-	public Actions act= new Actions(driver);
 	
 	public NewCarsPage SearchForAutomobile() {
 		searchBar.sendKeys("Range Rover");
@@ -42,15 +41,15 @@ public class HomePageClass extends ParentClass {
 	}
 	
 	public NewCarsPage FindaCar() {
-	act.moveToElement(FindACarDropdown).build().perform();
+	new Actions(driver).moveToElement(FindACarDropdown).build().perform();
 	NewCarOption.click();
 	return new NewCarsPage();
 	}
 	
-	public NewBikesPage FindNewBike() {
-		act.moveToElement(FindABikeDropdown).build().perform();
+	public NewBikesPageClass FindNewBike() throws IOException {
+		new Actions(driver).moveToElement(FindABikeDropdown).build().perform();
 	BikesUnderFindAoption.click();	
-	return new NewBikesPage();
+	return new NewBikesPageClass();
 	}
 	
 	

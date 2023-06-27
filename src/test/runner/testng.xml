@@ -5,6 +5,7 @@
    <test name = "Parallel Tests">
       <classes>
       <class name="com.qa.testcases.HomePageTest"/>
+      <class name="com.qa.testcases.BikesPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

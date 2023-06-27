@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Parallel Tests(failed)">
     <classes>
-      <class name="com.qa.testcases.HomePageTest">
+      <class name="com.qa.testcases.BikesPageTest">
         <methods>
-          <include name="FindforACarMethod"/>
           <include name="setUp"/>
           <include name="flushMethod"/>
+          <include name="ClickingOnTVSBikeLogo"/>
         </methods>
-      </class> <!-- com.qa.testcases.HomePageTest -->
+      </class> <!-- com.qa.testcases.BikesPageTest -->
     </classes>
   </test> <!-- Parallel Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

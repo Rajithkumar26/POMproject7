@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-27T08:07:48Z" name="Default suite" finished-at="2023-06-27T08:09:24Z" duration-ms="95435">
+  <suite started-at="2023-06-27T12:03:50Z" name="Suite" finished-at="2023-06-27T12:09:03Z" duration-ms="312593">
     <groups>
     </groups>
-    <test started-at="2023-06-27T08:07:48Z" name="Default test" finished-at="2023-06-27T08:09:24Z" duration-ms="95435">
+    <test started-at="2023-06-27T12:03:50Z" name="Parallel Tests" finished-at="2023-06-27T12:09:03Z" duration-ms="312593">
       <class name="com.qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:37:48Z" name="setUp" finished-at="2023-06-27T13:38:28Z" duration-ms="39406" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:33:50Z" name="setUp" finished-at="2023-06-27T17:35:33Z" duration-ms="102910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FindForBikeMethod()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:38:28Z" name="FindForBikeMethod" finished-at="2023-06-27T13:38:40Z" duration-ms="12283" status="PASS">
+        <test-method signature="FindForBikeMethod()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:35:33Z" name="FindForBikeMethod" finished-at="2023-06-27T17:37:03Z" duration-ms="89886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FindForBikeMethod -->
-        <test-method is-config="true" signature="flushMethod()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:38:40Z" name="flushMethod" finished-at="2023-06-27T13:38:41Z" duration-ms="628" status="PASS">
+        <test-method is-config="true" signature="flushMethod()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:37:03Z" name="flushMethod" finished-at="2023-06-27T17:37:14Z" duration-ms="11532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:38:41Z" name="setUp" finished-at="2023-06-27T13:38:49Z" duration-ms="8162" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:37:14Z" name="setUp" finished-at="2023-06-27T17:37:37Z" duration-ms="22821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FindforACarMethod()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:38:49Z" name="FindforACarMethod" finished-at="2023-06-27T13:39:09Z" duration-ms="19670" status="PASS">
+        <test-method signature="FindforACarMethod()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:37:37Z" name="FindforACarMethod" finished-at="2023-06-27T17:37:41Z" duration-ms="3607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FindforACarMethod -->
-        <test-method is-config="true" signature="flushMethod()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:39:09Z" name="flushMethod" finished-at="2023-06-27T13:39:09Z" duration-ms="483" status="PASS">
+        <test-method is-config="true" signature="flushMethod()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:37:41Z" name="flushMethod" finished-at="2023-06-27T17:37:41Z" duration-ms="652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:39:09Z" name="setUp" finished-at="2023-06-27T13:39:20Z" duration-ms="10693" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:37:41Z" name="setUp" finished-at="2023-06-27T17:38:13Z" duration-ms="31691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SearchingForAutomobileMethod()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:39:20Z" name="SearchingForAutomobileMethod" finished-at="2023-06-27T13:39:23Z" duration-ms="3651" status="PASS">
+        <test-method signature="SearchingForAutomobileMethod()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:38:13Z" name="SearchingForAutomobileMethod" finished-at="2023-06-27T17:38:29Z" duration-ms="15570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchingForAutomobileMethod -->
-        <test-method is-config="true" signature="flushMethod()[pri:0, instance:com.qa.testcases.HomePageTest@73302995]" started-at="2023-06-27T13:39:23Z" name="flushMethod" finished-at="2023-06-27T13:39:24Z" duration-ms="404" status="PASS">
+        <test-method is-config="true" signature="flushMethod()[pri:0, instance:com.qa.testcases.HomePageTest@6c2ed0cd]" started-at="2023-06-27T17:38:29Z" name="flushMethod" finished-at="2023-06-27T17:38:32Z" duration-ms="3784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushMethod -->
       </class> <!-- com.qa.testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.qa.testcases.BikesPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.BikesPageTest@7d9e8ef7]" started-at="2023-06-27T17:38:32Z" name="setUp" finished-at="2023-06-27T17:38:56Z" duration-ms="23517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ClickingOnTVSBikeLogo()[pri:0, instance:com.qa.testcases.BikesPageTest@7d9e8ef7]" started-at="2023-06-27T17:38:56Z" name="ClickingOnTVSBikeLogo" finished-at="2023-06-27T17:39:01Z" duration-ms="5134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickingOnTVSBikeLogo -->
+        <test-method is-config="true" signature="flushMethod()[pri:0, instance:com.qa.testcases.BikesPageTest@7d9e8ef7]" started-at="2023-06-27T17:39:01Z" name="flushMethod" finished-at="2023-06-27T17:39:03Z" duration-ms="1410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushMethod -->
+      </class> <!-- com.qa.testcases.BikesPageTest -->
+    </test> <!-- Parallel Tests -->
+  </suite> <!-- Suite -->
 </testng-results>
