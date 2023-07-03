@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testcases.BikesPageTest" class="method navigator-link" hash-for-method="ClickingOnTVSBikeLogo">ClickingOnTVSBikeLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testcases.BikesPageTest" class="method navigator-link" hash-for-method="ClickingOnTVSBikeLogo">ClickingOnTVSBikeLogo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="FindForBikeMethod">FindForBikeMethod</a> <!-- method navigator-link -->
@@ -117,7 +126,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="SearchingForAutomobileMethod">SearchingForAutomobileMethod</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="SearchingForAutomobileMethod({CarBrands=Tata Nexon})">SearchingForAutomobileMethod({CarBrands=Tata Nexon})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="SearchingForAutomobileMethod({CarBrands=Honda City})">SearchingForAutomobileMethod({CarBrands=Honda City})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="SearchingForAutomobileMethod({CarBrands=Mahindra Bolero})">SearchingForAutomobileMethod({CarBrands=Mahindra Bolero})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="SearchingForAutomobileMethod({CarBrands=Hyundai i20})">SearchingForAutomobileMethod({CarBrands=Hyundai i20})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,9 +156,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.testcases.BikesPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,10 +167,35 @@
                   <a name="ClickingOnTVSBikeLogo">
                   </a> <!-- ClickingOnTVSBikeLogo -->
                   <span class="method-name">ClickingOnTVSBikeLogo</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-JI70QVB&apos;, ip: &apos;192.168.29.195&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [997ce3f038576a1549ce2287d0e8700b, clickElement {id=AFF18CAED1042F8EE6FF809D3A478D6D_element_127}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Vaibhav\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57424/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (997ce3f038576a1549ce2287d0e8700b)] -&gt; xpath: (//a[text()=&quot;TVS&quot;])[1]]
+Session ID: 997ce3f038576a1549ce2287d0e8700b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.qa.BusinessPages.NewBikesPageClass.TVSBike(NewBikesPageClass.java:40)
+	at com.qa.testcases.BikesPageTest.ClickingOnTVSBikeLogo(BikesPageTest.java:33)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -169,9 +218,34 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="SearchingForAutomobileMethod">
-                  </a> <!-- SearchingForAutomobileMethod -->
+                  <a name="SearchingForAutomobileMethod({CarBrands=Tata Nexon})">
+                  </a> <!-- SearchingForAutomobileMethod({CarBrands=Tata Nexon}) -->
                   <span class="method-name">SearchingForAutomobileMethod</span>
+                  <span class="parameters">({CarBrands=Tata Nexon})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchingForAutomobileMethod({CarBrands=Honda City})">
+                  </a> <!-- SearchingForAutomobileMethod({CarBrands=Honda City}) -->
+                  <span class="method-name">SearchingForAutomobileMethod</span>
+                  <span class="parameters">({CarBrands=Honda City})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchingForAutomobileMethod({CarBrands=Mahindra Bolero})">
+                  </a> <!-- SearchingForAutomobileMethod({CarBrands=Mahindra Bolero}) -->
+                  <span class="method-name">SearchingForAutomobileMethod</span>
+                  <span class="parameters">({CarBrands=Mahindra Bolero})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchingForAutomobileMethod({CarBrands=Hyundai i20})">
+                  </a> <!-- SearchingForAutomobileMethod({CarBrands=Hyundai i20}) -->
+                  <span class="method-name">SearchingForAutomobileMethod</span>
+                  <span class="parameters">({CarBrands=Hyundai i20})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,6 +260,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.UtilitiesPackage.ExternalListeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Parallel Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.testcases.HomePageTest&quot;/&gt;
@@ -229,23 +306,35 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'FindForBikeMethod')
-data.setCell(0, 2, 'com.qa.testcases.HomePageTest')
-data.setCell(0, 3, 89886);
+data.setCell(0, 1, 'ClickingOnTVSBikeLogo')
+data.setCell(0, 2, 'com.qa.testcases.BikesPageTest')
+data.setCell(0, 3, 25135);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'SearchingForAutomobileMethod')
 data.setCell(1, 2, 'com.qa.testcases.HomePageTest')
-data.setCell(1, 3, 15570);
+data.setCell(1, 3, 16148);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ClickingOnTVSBikeLogo')
-data.setCell(2, 2, 'com.qa.testcases.BikesPageTest')
-data.setCell(2, 3, 5134);
+data.setCell(2, 1, 'SearchingForAutomobileMethod')
+data.setCell(2, 2, 'com.qa.testcases.HomePageTest')
+data.setCell(2, 3, 9700);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'FindforACarMethod')
 data.setCell(3, 2, 'com.qa.testcases.HomePageTest')
-data.setCell(3, 3, 3607);
+data.setCell(3, 3, 7090);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'FindForBikeMethod')
+data.setCell(4, 2, 'com.qa.testcases.HomePageTest')
+data.setCell(4, 3, 5121);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SearchingForAutomobileMethod')
+data.setCell(5, 2, 'com.qa.testcases.HomePageTest')
+data.setCell(5, 3, 4167);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SearchingForAutomobileMethod')
+data.setCell(6, 2, 'com.qa.testcases.HomePageTest')
+data.setCell(6, 3, 3850);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -282,51 +371,92 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">FindForBikeMethod</span>
-                <span class="method-start">102911 ms</span>
+                <span class="method-name">SearchingForAutomobileMethod({CarBrands=Tata Nexon})</span>
+                <span class="method-start">32539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">flushMethod</span>
-                <span class="method-start">192799 ms</span>
+                <span class="method-start">38268 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">204334 ms</span>
+                <span class="method-start">41704 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">FindforACarMethod</span>
-                <span class="method-start">227155 ms</span>
+                <span class="method-name">SearchingForAutomobileMethod({CarBrands=Honda City})</span>
+                <span class="method-start">70966 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">flushMethod</span>
-                <span class="method-start">230764 ms</span>
+                <span class="method-start">80954 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">231417 ms</span>
+                <span class="method-start">81547 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">SearchingForAutomobileMethod</span>
-                <span class="method-start">263108 ms</span>
+                <span class="method-name">SearchingForAutomobileMethod({CarBrands=Mahindra Bolero})</span>
+                <span class="method-start">100991 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">flushMethod</span>
-                <span class="method-start">278681 ms</span>
+                <span class="method-start">117209 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">118014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchingForAutomobileMethod({CarBrands=Hyundai i20})</span>
+                <span class="method-start">133385 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">flushMethod</span>
+                <span class="method-start">137334 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testcases.BikesPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">282471 ms</span>
+                <span class="method-start">137711 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ClickingOnTVSBikeLogo</span>
-                <span class="method-start">305988 ms</span>
+                <span class="method-start">160978 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">flushMethod</span>
-                <span class="method-start">311125 ms</span>
+                <span class="method-start">188677 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">191382 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FindforACarMethod</span>
+                <span class="method-start">225866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">flushMethod</span>
+                <span class="method-start">233015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">233813 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FindForBikeMethod</span>
+                <span class="method-start">275693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">flushMethod</span>
+                <span class="method-start">280915 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

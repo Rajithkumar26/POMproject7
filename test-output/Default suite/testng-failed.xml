@@ -5,8 +5,8 @@
     <classes>
       <class name="com.qa.testcases.HomePageTest">
         <methods>
-          <include name="FindForBikeMethod"/>
           <include name="setUp"/>
+          <include name="SearchingForAutomobileMethod"/>
           <include name="flushMethod"/>
         </methods>
       </class> <!-- com.qa.testcases.HomePageTest -->

@@ -34,8 +34,8 @@ public class HomePageClass extends ParentClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public NewCarsPage SearchForAutomobile() {
-		searchBar.sendKeys("Range Rover");
+	public NewCarsPage SearchForAutomobile(String carbrand) {
+		searchBar.sendKeys(carbrand);
 		searchBar.sendKeys(Keys.ENTER);
 	return new NewCarsPage();
 	}

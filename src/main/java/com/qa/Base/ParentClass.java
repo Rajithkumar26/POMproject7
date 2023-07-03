@@ -15,6 +15,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
+import com.qa.Excel.ExcelReader;
+import com.qa.UtilitiesPackage.ExtentManagerClass;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ParentClass {
@@ -23,6 +27,9 @@ public class ParentClass {
 	public static Properties config;
 	public FileInputStream fis;
 public static WebDriver driver;
+public static ExtentReports extentreport= ExtentManagerClass.getInstance();
+public static ExtentTest test;
+public static ExcelReader Excelfile=new ExcelReader("C:\\Users\\Vaibhav\\eclipse-workspace\\POMproject7\\src\\test\\Excel\\testdata_POMproject7.xlsx");
 
 	public ParentClass() throws IOException {
 		config = new Properties();
@@ -30,6 +37,7 @@ public static WebDriver driver;
 				"C:\\Users\\Vaibhav\\eclipse-workspace\\POMproject7\\src\\test\\properties\\Config.properties");
 		config.load(fis);
 
+		
 	}
 
 	public static void initiaizationMethod() {
@@ -40,6 +48,7 @@ public static WebDriver driver;
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("credentials_enable_service", false);
 			prefs.put("profile.password_manager_enabled", false);
+			prefs.put("profile.default_content_setting_values.notifications", 2);
 
 			op.setExperimentalOption("prefs", prefs);
 			op.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
